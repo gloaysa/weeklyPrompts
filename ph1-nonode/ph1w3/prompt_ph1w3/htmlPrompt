@@ -1,9 +1,0 @@
-BEAVERS.HTML:  
-		IMPORTS: model.js, view.js, controller.js, beavers.css
-		INTERACTIONS:
-			UNTRACK ALL BEAVERS: be able to untrack all beavers when funding is cut
-			RETRACK ALL BEAVERS: rich daddy
-			UNTRACK SINGLE BEAVER: maybe it died, maybe you're bored of it
-			RETRACK SINGLE BEAVER: you're bored, why not track another beaver
-			ADD A BEAVER:  prompt the user for all the needed info and make the beaver
-			SPOT A BEAVER:  prompt the user for the new location and add it to the beaver  
