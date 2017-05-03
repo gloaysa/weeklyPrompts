@@ -1,0 +1,40 @@
+(same as week 4 project.  reuse or refactor that)
+
+MODEL.JS:  all functionality connected to storing, accessing, modifying beavers
+	BEAVER RECORD: object
+		PROPERTIES:
+			ID: int, a unique ID assigned at document creation. no two may ever have the same
+			NAME: string, the beaver's name
+			AGE: int, the beaver's age
+			SEX: string indicating beaver's sex
+			LOCATIONHISTORY: array containing history of recorded sightings
+			TRACKED:  boolean, is this beaver being tracked?
+	BEAVERSLIST:  an object 
+		PROPERTIES:
+			BEAVERS:  connection to mongoDB collection
+		METHODS:
+			TOGGLETRACKED:
+				ARGS: int, the index of the beaver to un/track
+				RETURNS:  success/not message
+				BEHAVIOR:  accesses the indicated beaver and sets its 'tracked' property to what it wasn't
+			ADDBEAVER:
+				ARGS: strings; name, sex, gender, (optional first location). number; age
+				RETURNS: success/not message
+				BEHAVIOR:  uses the arguments to create a new beaver object which is saved into 'beavers' array.  tracked is default set to yes. ID is generated and assigned
+			SPOTBEAVER:
+				ARGS: something to identify which beaver, and the new location
+				RETURNS:  success/not message
+				BEHAVIOR:  finds the right beaver from 'beavers' and adds the new location to locationHistory
+			INVENTORYBEAVERS:
+				ARGS:  nada
+				RETURNS:  an array containing the names of all tracked beavers || a failure message
+				BEHAVIOR:  extracts the 'name' from each beaver being tracked and pushes it into a new array
+			MODIFYBEAVER:
+				ARGS: a beaver id and the info to be updated
+				RETURNS: success/not message and new beaver
+				BEHAVIOR:  accesses the correct beaver and modify it
+
+
+Usage Examples:
+
+Sample Inputs and Outputs:  maybe not?

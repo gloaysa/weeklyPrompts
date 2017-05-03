@@ -1,0 +1,38 @@
+Project:   Beaver Browser
+
+Prompt
+	Beavers are sick of you.  they stole your laptop and now all use your tracking software as a Facebook For Beavers (tm).  they've also attended Elium and are better programmers than you. they've served your beaverbook from a server so anyone can see it
+
+Your project will contain these items:	
+
+	VIEWS FOLDER:
+		BEAVERS.EJS:  the home page with all profiles listed. (EJS files and rendering eliminate the need for 'VIEW' objects)
+		PROFILE.EJS:  the beaver's individual profile
+		RELATIONHISTORY.EJS:  displays the relationship status and history of two beavers
+
+	PUBLIC FOLDER:	
+		STYLES FOlDER:  a folder with all of your styles
+		SCRIPTS FOLDER:  whatever scripts you think to send 
+	
+	MODELS FOLDER:
+		BEAVERMODEL.JS:  the model object that manipulates beaver objects
+		RELATIONSMODEL.JS:  the model object that manipulates relationship objects
+
+	SERVER.JS:  this will have all the Express configuration and handlers.  Static serving of 'PUBLIC' takes place here.  Handlers in this file will (for now) make use of your original 'MODEL' objects.  This file replaces the 'CONTROLLER' object from last week.
+
+	(and nodely things - package.json, node_modules)
+	
+
+Challenges: 
+	- allow users to search BeaverBook by keyword
+	- allow 'PROFILE.EJS' to locally store all changes to a beaver's profile and automatically save them when 'save' is clicked
+	- or save them automatically when the page is navigated away from
+	- refactor your code to use MongoDB instead of arrays
+
+	- create a 'shaddow' app consisting of documentation for each file
+	- refactor your code to all be self-documenting
+	- if you and a friend have written documentation, try this:
+		refactor your server to adhere to their models' documentation
+		replace your models with theirs and see if it works!
+		if you both did your work well, it SHOULD work first try
+

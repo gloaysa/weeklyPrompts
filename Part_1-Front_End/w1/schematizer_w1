@@ -1,0 +1,65 @@
+Project B:   Schematizer
+
+Prompt:
+	You're a lazy teacher and want to make sure students are writing good operations
+
+Your project will contain these items:
+	OPERATION:   objects.  as many as you like
+		PROPERTIES:
+			NAME: a string that describes what the operation does
+			NUMARGS: the number of arguments this operation takes
+		METHODS:
+			OPERATION: a function that does the math
+	SCHEME:   object
+		PROPERTIES:
+			NAME:  object
+				PROPERTIES:
+					TYPE: a string indicating the type of name
+					FALLBACK: a value to be used as 'name' if an operation comes in without one
+			NUMARGS:  object
+				PROPERTIES:
+					TYPE:  a string indicating the type of 'args'
+					FALLBACK:  an value to fall back on if there is no 'args'
+			OPERATION:  object
+				PROPERTIES:
+					TYPE: a string indicating the type of 'operation'
+					FALLBACK:  a default value for 'operation' if it's not included
+	Schema validating function:
+		Arguments:
+			op: an operation object 
+			schema:  the schema it must match
+		Return values:
+			array: containing -	
+				a string: tells if the match was a success or not. 
+					if not it tells what was wrong with the op
+				an op object: it returns the op object passed in.
+					if defaults were needed it contains those
+		Behavior:
+			schematizer will take an object and a schema.  it will compare the object to the expectations of the schema, and return the object with a success/failure message.  
+			if the object passes but is incomplete, it will be filled with default values. if it fails, it is returned whole
+
+Usage example:
+	var arrayReturned = schematizer(schema, opObj);
+	
+Challenge: 
+	have required and non-required fields.
+	remeber if an object was valid or not - maybe by storing them in different locations, or adding a property, or anything else you can think of
+
+Sample inputs and outputs: *operationSchema is defined in 'code'*
+	: operationSchema, {name: 'subtract', args: 2, operation: function(a, b){return a - b}}
+		//->  ['all good', {name: 'subtract', args: 2, operation: function(a, b){return a - b}}]
+
+	: operationSchema, {args: 2, operation: function(a, b){return a - b}} 
+		//->  ['no name, inserted default', {name: 'ackermann', args: 2, operation: function(a, b){return a - b}}]
+
+	: operationSchema, {name: 'subtract', args: 2}
+		//->  ['no operation, inserted default', {name: 'subtract', args: 2, operation: function(){return '1337FAIL'}}]
+
+	: operationSchema, {name: 'subtract', args: 2, operation: function(a, b){return a - b}, robin: "what's up robin"}
+		//->  ['does not match schema', {name: 'subtract', args: 2, operation: function(a, b){return a - b}, robin: "what's up robin"}]
+
+	: operationSchema, {name: 'subtract', operation: function(a, b){return a - b}}
+		//->  ['no args specified, booooo', {name: 'subtract', operation: function(a, b){return a - b}}]	
+
+The exercises it combines:
+	Fill this in once the exercises are made
