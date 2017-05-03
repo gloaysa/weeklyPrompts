@@ -1,0 +1,9 @@
+<a href="/beavers"> Create New Beaver </a>
+<ul>
+    <% for (var id in beavers) { %>
+        <li>
+            <a href="/beavers/<%= id %>" ><%= beavers[id].name %></a>
+            <!-- Link to user Read View  -->
+        </li>
+    <% } %>
+</ul>

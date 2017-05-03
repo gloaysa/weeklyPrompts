@@ -1,0 +1,22 @@
+-------------- PROMPTS LOOK LIKE THIS --------------
+
+Project:   -- name of project, usually informative --
+
+Prompt
+	-- a little story to de-abstract the project a little bit --
+
+Your project will contain these items:
+	-- a list of objects and functions that should be declared at the global scope --
+	-- each object and function will have a documentation-style description --
+
+Usage example:
+	-- an example of the syntax someone could use to call your functions in their code --
+
+Sample inputs and outputs:
+	-- example arguments and what a correct project will do when given those inputs --
+
+The exercises it combines:
+	-- which exercises from the week can be modified to build this project --
+	
+Challenges: 
+	-- some ideas for next steps if you're bored --
