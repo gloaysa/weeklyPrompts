@@ -1,0 +1,30 @@
+ALERT:  use only JS, not jQuery (we cover that next week)
+this one will be the most work because of all the DOM stuff
+
+VIEW.JS:  all funcitonality connected to making something visible on screen (the DOM)
+	BEAVERVIEWER:  an object
+		METHODS:
+			DISPLAYBEAVERS:
+				ARGS: nada
+				RETURNS:  success/not message
+				BEHAVIOR:  creates a UL and populates it with beaver profiles and all the buttons that entails.
+			STRINGIFYBEAVER:  
+				ARGS:  a beaver object
+				RETURNS:  a stringified version of the beaver object
+				BEHAVIOR:  reads through the properties of the beave object, concatinating them into a string
+			CREATESPOTTEDBUTTON:
+				ARGS:  nada (or the name a beaver. up to you)
+				RETURNS:  failure message and no button. or. success button and a button
+				BEHAVIOR:  creates a button with the spotted class and nice text
+			CREATETRACKEDBUTTON:
+				ARGS:   nada (or the name a beaver. up to you)
+				RETURNS:  failure message and no button. or. success button and a button 
+				BEHAVIOR:  creates a button with the tracked class and nice text 
+			SETUPEVENTLISTENERS:
+				ARGS:  nada
+				RETURNS:  success/not message
+				BEHAVIOR:  connects onclick events to buttons according to their class
+
+Usage Examples:
+
+Sample Inputs and Outputs:

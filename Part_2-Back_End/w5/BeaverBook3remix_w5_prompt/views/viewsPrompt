@@ -1,0 +1,24 @@
+EJS files:
+	HOME:
+		RENDER ARGS: all beaver objects
+		INTERACTIONS: a beaver can 
+			navigate to profiles	
+			navigate to signup
+			create a new profile ('sign up')
+			do everything else they could do in week 3's project
+			
+	PROFILE:
+		RENDER ARGS: all beavers, one beaver's id
+		INTERACTIONS: a beaver can
+			navigate home
+			navigate to other beaver profiles
+			add a friend (friendship can be one-way)
+			modify own profile
+
+HTML file:
+	SIGNUP:
+		INTERACTIONS: a beaver can
+			create a new beaver entry
+			navigate home
+
+

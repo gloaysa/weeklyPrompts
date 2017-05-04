@@ -1,0 +1,39 @@
+PROFILEVIEW.JS:  all funcitonality connected to making something visible on screen (the DOM)
+	PROFILEVIEWER:  an object
+		METHODS:
+			DISPLAYBEAVER:
+				ARGS: id of the beaver to profile
+				RETURNS: success/not message
+				BEHAVIOR:  displays the profile info for the beaver you're viewing
+			DISPLAYRELATIONS:
+				ARGS: id of the beaver you're viewing
+				RETURNS:  success/not message
+				BEHAVIOR:  creates a UL and populates it with relationship infos and all the buttons that entails.  creates another list for all beavers that are not yet friends with this one.
+			STRINGIFYRELATION:  
+				ARGS:  a beaver object
+				RETURNS:  a stringified version of the beaver object
+				BEHAVIOR:  reads through the properties of the beave object, concatinating them into a string
+			CREATEREQUESTBUTTON:
+				ARGS:  nada (or the name a beaver. up to you)
+				RETURNS:  failure message and no button. or. success message and a button
+				BEHAVIOR:  creates a button with the request class and nice text
+			CREATEUNFRIENDBUTTON:
+				ARGS:   nada (or the name a beaver. up to you)
+				RETURNS:  failure message and no button. or. success message and a button 
+				BEHAVIOR:  creates a button with the unfriend class and nice text 
+			CREATEMESSAGEBUTTON:
+				ARGS:   nada (or the name a beaver. up to you)
+				RETURNS:  failure message and no button. or. success message and a button 
+				BEHAVIOR:  creates a button with the message class and nice text
+			CREATEMODIFYBUTTON:
+				ARGS:   nada (or the name a beaver. up to you)
+				RETURNS:  failure message and no button. or. success message and a button 
+				BEHAVIOR:  creates a button with the modifyProfile class and nice text
+			SETUPEVENTLISTENERS:
+				ARGS:  nada
+				RETURNS:  success/not message
+				BEHAVIOR:  connects onclick events to buttons according to their class
+
+Usage Examples:
+
+Sample Inputs and Outputs:

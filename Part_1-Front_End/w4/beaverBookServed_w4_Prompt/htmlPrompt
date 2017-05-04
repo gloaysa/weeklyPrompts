@@ -1,0 +1,23 @@
+two html files:
+	HOME:
+		IMPORTS: controller.js, homeStyle.css, beaversModel.js, homeView.js
+		INTERACTIONS:
+			UNLIKE ALL BEAVERS: be able to untrack all beavers when funding is cut
+			RELIKE ALL BEAVERS: rich daddy
+			UNLIKE SINGLE BEAVER: maybe it died, maybe you're bored of it
+			RELIKE SINGLE BEAVER: you're bored, why not track another beaver
+			ADD A BEAVER:  prompt the user for all the needed info and make the beaver
+			SPOT A BEAVER:  prompt the user for the new location and add it to the beaver 
+			VIEW A BEAVER's PROFILE:  navigate to the profile page and render the chosen beaver's profile
+	PROFILE:
+		IMPORTS: controller.js, profileStyle.css, beaversModel.js, relationsModel.js, profileView.js
+		INTERACTIONS:
+			RETURN HOME:  yup
+			NAVIGATE TO FRIEND BEAVERS PROFILE:  by clicking on a friend beaver's name, display their profile
+			SEND FRIEND REQUEST: click on a not-friend beaver to send a request
+			RESPOND TO FREIND REQUEST:  have the option to accept or deny a request.  if accepted, a relationship is added.  consider adding notifications to both parties
+			SEND MESSAGE:  click a message button by a friend beaver, have a prompt for the new message, save the message to that relationship object, display updated message history. 
+			UNFRIEND:  kill a friendship, does not need confirmation from the other
+
+
+
