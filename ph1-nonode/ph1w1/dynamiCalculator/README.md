@@ -1,6 +1,6 @@
-[![Elium Academy](http://antwerpstartupfair.be/wp-content/uploads/2017/02/Elium.Academy.png)](http://www.elium.academy)
-
 # Project A: Dynamic Calculator
+
+[![Elium Academy](http://www.zoomby.es/img/Elium-Logo-200-px-Black-PNG.png)](http://www.elium.academy)
 
 ### Prompt
 
