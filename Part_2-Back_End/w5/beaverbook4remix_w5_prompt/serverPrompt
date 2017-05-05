@@ -1,0 +1,35 @@
+import modules
+
+configure app
+
+define middleware
+static serving
+	any resources that do not change as the data changes 
+	(style, scripts, HTML ...)
+
+Beaver handlers   (these will manipulate the models)
+(these can be organized by CRUD type or model type)
+  HTTP method  |  URL | Behavior  |  
+|------------- |---------- |--------- |  
+| | index | |
+|  GET  | /home |  renders home page  |
+| | create | |
+| GET  | /beaver  | renders 'signin' page |
+| POST  | /beaver  | sends new beaver to database |
+| GET  | /relation  | renders 'friend me!' page |
+| POST  | /relation  | sends new relation to database |
+| | read | |
+|  GET |  /beaver/:id | renders single beaver's profile |
+|  GET |  /relation/:id | renders single relationship history |
+| | update | |
+| GET  | /beaver/:id/update  | send page for modifying a beaver |
+| POST  | /beaver/:id/update  | sends updated beaver data |
+| GET  | /relation/:id/update  | send page for modifying a relation |
+| POST  | /relation/:id/update  | sends updated relation data |
+| | delete | |
+| GET  | /beaver/:id/delete  | get page to confirm beaver deletion |
+| POST  | /beaver/:id/delete  | delete da beaver |
+| GET  | /relation/:id/delete  | get page to confirm defriending |
+| POST  | /relation/:id/delete  | loose a friend |
+
+start server

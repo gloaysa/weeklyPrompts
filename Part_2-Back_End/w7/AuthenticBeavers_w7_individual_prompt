@@ -1,0 +1,47 @@
+Refactor your code from week 6 to satisfy these user stories -
+
+A beaver can:
+	LOG in as a public, guest, user, or admin
+	be LOGged in under more than one type at once
+
+A public beaver can:
+	LOGin or sign up
+
+A guest beaver can:
+	read about BeaverBook
+	use a demo user account
+		no changes they make persist
+		all beavers visible in demo are fake beavers
+
+A user beaver can:
+	read bout beaverbook
+	modify their profile information
+	view friend's full profiles
+	view other users public profiles
+	message any beaver
+	write on friend beavers' public profiles
+	not modify message histories
+	delete things from their public profile
+	LOG out
+
+An admin beaver can:
+	view any beaver's private or public profile
+	modify any beaver's private or public profile
+	delete any beaver's profile
+	create new beaver profiles
+	access directly the database
+
+			Challenges -
+	
+A Mage Beaver can modify the very nature of BeaverBook:
+	it has crud access to the very source-code of BeaverBook from it's profile
+
+A user beaver can see a feed of messages, posts, and friend requests
+
+Write a public-facing API accessible to admins and above for accessing BeaverBook data from outside the website
+
+
+
+
+
+
