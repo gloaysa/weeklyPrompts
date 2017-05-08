@@ -67,7 +67,8 @@ schemaCalc.changeSchema({
 ### Challenge
 
 1. If 'operate' is called with an operation name that doesn't exist, create a new one with that name and give it a default operation and arguments.  
-2. If the wrong numbers of arguments where passed it, prompt the user for new ones, then use them on the operation that was originally called.  
+2. If the wrong numbers of arguments where passed it, prompt the user for new ones, then use them on the operation that was originally called.    
+3. Give your calculator a memory.  Someone can use it by typing 'x+y, enter, +z, enter, clear'.  Like normal calculators.  
 
 ---
 
