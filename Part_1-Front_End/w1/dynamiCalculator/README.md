@@ -54,7 +54,7 @@ The idea is that when dynCalc is called with an operation object and numbers as 
 
 ### Challenge
 
-Replace arguments 'a, b, c' with an array containing them.  
+Remove the arguments 'a, b, c' from your calculator.  Use the builtin javascript '[arguments](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Functions/arguments)' feature to dynamically access any number of arguments.   
 
 Make you calculator a method in a new object and give that object a property called 'operations' and is an array.  
 Next give the calculator a method that adds new operations objects to the ‘dynCalc.operations’ array.  
