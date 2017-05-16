@@ -84,7 +84,18 @@ The idea is that when schematizer is called with an operation object and the sch
 ### Challenge
 
 1. Have required and non-required fields.
-2. Remeber if an object was valid or not - maybe by storing them in different locations, or adding a property, or anything else you can think of.
+2. Remeber if an object was valid or not - maybe by storing them in different locations, or adding a property, or anything else you can think of.  
+3. Use this code to make your schematizer function a pure function:  
+
+// helper function that allows validator to be a pure function  
+var opCopier = function(op) {  
+	var newOp;  
+	newOp.name = op.name;  
+	newOp.args = op.args;  
+	newOp.operation = op.operation;  
+	return newOp;  
+};  
+
 
 ---
 
