@@ -23,8 +23,8 @@
 2. **Scheme**: An object containing objects with the type and default values.
 
   * Properties:
-		- name: Object.  
- 		- numArgs: Object.  
+	- name: Object.  
+ 	- numArgs: Object.  
   	- operation: Operation object.  
   		Each of these objects will contain the properties 'type', indicating what kind of value the object contains, and 'fallback', a value to be used if when creating the new object, it doesn't contain that key.
 
