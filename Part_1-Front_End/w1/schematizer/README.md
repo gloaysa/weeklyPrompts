@@ -16,7 +16,11 @@
   * Properties:
     - Name: a string that describes what the operation does.
     - Args: the number of arguments this operation takes.
-    - Operation: a function that does the math.
+  * Methods:
+    - Operation: a function that does the math with, it will contain:
+        + args: the arguments that the function takes. It's variable, up to you.
+        + return: the result of the math you made it do.
+
 
    Behavior: it executes the formula indicated in the 'name' property.
 
