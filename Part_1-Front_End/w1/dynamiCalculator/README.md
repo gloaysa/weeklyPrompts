@@ -30,13 +30,13 @@
   * Return values:
     - a number: The result of sending the arguments through op.operation().
 
-  Behavior: DynCalc will pass (a), (a,b), or (a,b,c) into ‘op.operation’’ depending on the value of ‘op.args’ and return the value of the function call.
+  Behavior: dynamicCalculator will pass (a), (a,b), or (a,b,c) into ‘op.operation’’ depending on the value of ‘op.args’ and return the value of the function call.
 
 ---
 
 ### Usage example
 
-The idea is that when dynCalc is called with an operation object and numbers as arguments, it will operate the function inside the operation object. Since the operation functions return the result, it could be stored in a new variable.
+The idea is that when dynamicCalculator is called with an operation object and numbers as arguments, it will operate the function inside the operation object. Since the operation functions return the result, it could be stored in a new variable.
 
 
  * Sample inputs and outputs:
@@ -57,7 +57,7 @@ The idea is that when dynCalc is called with an operation object and numbers as 
 Remove the arguments 'a, b, c' from your calculator.  Use the builtin javascript '[arguments](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Functions/arguments)' feature to dynamically access any number of arguments.   
 
 Make you calculator a method in a new object and give that object a property called 'operations' and is an array.  
-Next give the calculator a method that adds new operations objects to the ‘dynCalc.operations’ array.  
+Next give the calculator a method that adds new operations objects to the ‘dynamicCalculator.operations’ array.  
 Finally create a method that takes the name of an operation and numbers.  It will find the operation by that name and execute it with the numbers.  
 
 ---
