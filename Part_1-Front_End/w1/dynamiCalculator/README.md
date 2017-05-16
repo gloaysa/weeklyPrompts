@@ -22,7 +22,7 @@
 
    Behavior: it executes the formula indicated in the 'name' property.
 
-2. **Dynamic calculator function**: the function that will be called to operate the objects.
+2. **dynamiCalculator function**: the function that will be called to operate the objects.
 
   * Arguments:
     - op: an operation object.
