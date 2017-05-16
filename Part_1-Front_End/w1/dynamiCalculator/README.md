@@ -54,9 +54,11 @@ The idea is that when dynCalc is called with an operation object and numbers as 
 
 ### Challenge
 
-Replace arguments 'a, b, c' with an array containing them.
-Give the dynCalc a property called ‘operations’ which is an object of operation objects.
-Next give the calculator a method that adds new operations objects to the ‘dynCalc.operations’ object.
+Replace arguments 'a, b, c' with an array containing them.  
+
+Make you calculator a method in a new object and give that object a property called 'operations' and is an array.  
+Next give the calculator a method that adds new operations objects to the ‘dynCalc.operations’ array.  
+Finally create a method that takes the name of an operation and numbers.  It will find the operation by that name and execute it with the numbers.  
 
 ---
 
