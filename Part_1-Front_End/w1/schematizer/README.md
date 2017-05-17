@@ -89,7 +89,7 @@ The idea is that when schematizer is called with an operation object and the sch
 
 // helper function that allows validator to be a pure function  
 var opCopier = function(op) {  
-	var newOp;  
+	var newOp = {};  
 	newOp.name = op.name;  
 	newOp.args = op.args;  
 	newOp.operation = op.operation;  
