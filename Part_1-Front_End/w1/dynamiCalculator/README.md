@@ -56,9 +56,12 @@ The idea is that when dynamicCalculator is called with an operation object and n
 
 Remove the arguments 'a, b, c' from your calculator.  Use the builtin javascript '[arguments](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Functions/arguments)' feature to dynamically access any number of arguments.   
 
-Make your calculator a method in a new object and give that object a property called 'operations' and is an array.  
-Next give the calculator a method that adds new operations objects to the ‘dynamicCalculator.operations’ array.  
-Finally create a method that takes the name of an operation and numbers.  It will find the operation by that name and execute it with the numbers.  
+This is a two part challenge to illustrate some usage difference between arrays and objects:  
+  * Make two new objects and place your calculator as a method in each  
+  * In one object, add an object property called 'operations' that will be used to add new operation objects  
+  * In the other object, add and array property by the same name for the same purpose
+  * Next give both calculators a method that adds new operations objects into that object's 'operations' property.  
+  * Finally create a separate method in each that takes the name of an operation and numbers.  It will look for an operation of that name in it's 'operations' property and execute that operation if it exists.  
 
 ---
 
