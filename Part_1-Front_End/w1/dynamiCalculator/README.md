@@ -8,7 +8,7 @@
 
 ---
 
-#### This project contains two items:
+#### This project contains two items:     
 
 1. **Operation objects**: An operation object is an object containing a function.
 
