@@ -12,7 +12,7 @@
 #### This project contains 1 object, that contains 5 objects inside:  
 
 1. **schemaCalc**: Is the main object, containing all the objects, arrays and functions within.  
-   1. operations: an array or object that contains operation objects.  
+   1. operations: an object that contains operation objects.  
    2. schema: an object used for validating new operation objects.  
    3. addTo: a function that adds new objects to 'operations'. Contains:  
 		- args: an operation object.  
