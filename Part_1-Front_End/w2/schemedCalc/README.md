@@ -5,11 +5,19 @@
 
 ### Prompt
 
-> You're a clever accountant that want to create and store yours operation objects just once, based in an schema, to operate them later on when need it. You'll also want to reset the scheme, because the life is rich in problems.
+> You're a clever accountant that want to create and store yours operation objects just once, based in an schema, to operate them later on when need it. You'll also want to reset the scheme, because the life is rich in problems.  
+  
+> The final deliverable will be a folder containing:  
+>   * An 'empty' project that satisfies the prompt  
+>   * A dummy project that works by returning hard-coded objects of the right type  
+>   * A file containing each method's development in isolation of the others  
+>   * Challenge - Write a small series of unit tests for each method  
+>   * The final working project  
+	
 
 ---
 
-#### This project contains 1 object, that contains 5 objects inside:  
+#### The final project contains 1 object, that contains 5 objects inside:  
 
 1. **schemaCalc**: Is the main object, containing all the objects, arrays and functions within.  
    1. operations: an object that contains operation objects.  
