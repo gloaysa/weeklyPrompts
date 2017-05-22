@@ -78,6 +78,7 @@ schemaCalc.changeSchema({
 2. If the wrong numbers of arguments where passed it, prompt the user for new ones, then use them on the operation that was originally called.    
 3. Give your calculator a memory.  Someone can use it by typing 'x+y, enter, +z, enter, clear'.  Like normal calculators.  
 4. Embed your calculator in an HTML file to make a GUI
+5. Create 2 schemaCalcs, one with an array for 'operations' and the other with an object for 'operations'.  Notice how the choice of data structure changes the difficulty of the project.
 
 ---
 
