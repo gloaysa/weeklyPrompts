@@ -5,7 +5,14 @@
 
 ### Prompt
 
-> You are an aspiring naturalist tracking the behavior of local Urban Beavers. So you're going to create your own web application that will help you to add new beavers that you may find, check the ones that you are currently tracking and add new locations if you spot them again.
+> You are an aspiring naturalist tracking the behavior of local Urban Beavers. So you're going to create your own web application that will help you to add new beavers that you may find, check the ones that you are currently tracking and add new locations if you spot them again.  
+
+> Your final project will contain these items:  
+>   * 1 empty project with no HTML, the view will only console.log  
+>   * 1 dummy project wtih only console.logs and a test file  
+>   * Several 'branch' folders for developing the tricky bits in isolation  
+>   * Final project assembled  
+>   * Documentation
 
 ---
 
