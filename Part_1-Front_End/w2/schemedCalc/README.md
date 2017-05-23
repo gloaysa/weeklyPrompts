@@ -20,12 +20,12 @@
 #### The final project contains 1 object, that contains 5 objects inside:  
 
 1. **schemaCalc**: Is the main object, containing all the objects, arrays and functions within.  
-   1. operations: an object that contains operation objects.  
+   1. operations: an object that contains operation objects. each operation is keyed by it's 'name' property.  
    2. schema: an object used for validating new operation objects.  
    3. addTo: a function that adds new objects to 'operations'. Contains:  
 		- args: an operation object.  
 		- returns: a success or failure message.  
-Behavior: uses 'schema' to validate new operation objects before adding them to 'operations' if they are valid.  
+Behavior: uses 'schema' to validate new operation objects.  If the object is valid, add it to a new property in 'this.operations'.  
    4. operate: a function that operates the operation objects inside 'operations'. It contains:  
   		- args: a string indicating the operation to be used and the numbers to be operated on.  
   		- returns: an array containing a success/failure message and the result of the operation. If the operation was a failure, return 'undefined' as the result.  
