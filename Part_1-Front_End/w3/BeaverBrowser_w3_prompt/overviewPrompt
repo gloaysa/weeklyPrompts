@@ -20,9 +20,6 @@ Some User Stories:
 	- You see Patty at the liquor store.  so you open your phone, click 'spot Patty', and enter 'liquor store' in the text field.  now her info includes the liquor store.
 	- There's a new beaver on the metro today.  You hand him your phone and ask him to register himself.  He enters his name, age, sex, and 'line 5' into the text blanks.  now you've got another beaver profile on the home page.
 	- Patty gets sick of you writting down what she does every day and threatens to call the police.  you click 'untrack Patty' and now all you can see is her name and a big red 'X' next to it.
-
-The exercises it combines:
-	-- which exercises from the week can be modified to build this project --
 	
 Challenges: 
 	- (extra challengy) refactor your project to use classes instead of objects
