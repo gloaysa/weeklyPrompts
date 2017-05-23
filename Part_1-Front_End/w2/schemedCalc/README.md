@@ -20,13 +20,13 @@
 #### The final project contains 1 object, that contains 5 objects inside:  
 
 1. **schemaCalc**: Is the main object, containing all the objects, arrays and functions within.  
-   1. operations: an object that contains operation objects. each operation is keyed by it's 'name' property.  
-   2. schema: an object used for validating new operation objects.  
-   3. addTo: a function that adds new objects to 'operations'. Contains:  
+   1. savedOperations: an object that contains operation objects. each operation is keyed by it's 'name' property.  
+   2. schema: an object used for validating new operation objects, same as last week's schema.  
+   3. addOperation: a function that adds new objects to 'operations'. Contains:  
 		- args: an operation object.  
 		- returns: a success or failure message.  
 Behavior: uses 'schema' to validate new operation objects.  If the object is valid, add it to a new property in 'this.operations'.  
-   4. operate: a function that operates the operation objects inside 'operations'. It contains:  
+   4. doMath: a function that uses the operations stored inside 'this.operations'. It contains:  
   		- args: a string indicating the operation to be used and the numbers to be operated on.  
   		- returns: an array containing a success/failure message and the result of the operation. If the operation was a failure, return 'undefined' as the result.  
 Behavior: Searches for an operation with the name passed in. If it exists, execute the operation on the arguments. If not, it say so.  
@@ -41,22 +41,22 @@ Behavior: change the schema object for the argument.
 
 The idea of this project is to make an object capable of create and store new objects based in a schema, to operate with them later on. If needed, the schema can be modified.
 
- * Sample function's inputs and outputs:  
+ * Sample method inputs and outputs:  
 
- **addTo()**  
+ **addOperation()**  
 
 ```javascript
-schemaCalc.addTo({
+schemaCalc.addOperation({
     name: "sum",
     numArgs: 2,
     operation: function(a, b){return a + b}
   });
   //-> success!
 ```
-**operate()**  
+**doMath()**  
 
 ```javascript
-schemaCalc.operate("sum", 1, 2);
+schemaCalc.doMath("sum", 1, 2);
 //-> 3
 ```
 **changeSchema()**  
