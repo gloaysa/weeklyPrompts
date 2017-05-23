@@ -20,10 +20,10 @@ Be ready, this file is loooong.
 
 #### This project contains 5 files: 1 HTML, 1 CSS and 3 Javascript files.
 
-1. **beavers.html**: The site that the people will see and use. The structure is up to you, but it must contain:  
+1. **beavers.html**: The site that the people will see and interact with. The structure is up to you, but it must contain:  
 
-  + Imports: refering to the .css and all the .js files.  
-  + Interactions:
+  + Imports:  all of your .js files and your .css style sheet 
+  + Users can:
 
   		- UNTRACK ALL BEAVERS: be able to untrack all beavers when funding is cut.
 
@@ -39,7 +39,7 @@ Be ready, this file is loooong.
 
 3. **model.js**: All the functionality connected to storing, accessing, modifying beavers. It will have a main object storing other objects and functions. No libraries, just vanilla javascript :)
 
-	+ beaversList: the main object, contains objects and functions.  
+	+ beaversList: the 'model' in your MVC
 	**PROPERTIES**
 
 		- beaverRecord: object. Their properties must be:
