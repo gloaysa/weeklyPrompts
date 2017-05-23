@@ -27,7 +27,3 @@ MODEL.JS:  all functionality connected to storing, accessing, modifying beavers
 				RETURNS:  an array containing the names of all tracked beavers || a failure message
 				BEHAVIOR:  extracts the 'name' from each beaver being tracked and pushes it into a new array
 
-
-Usage Examples:
-
-Sample Inputs and Outputs:  maybe not?
