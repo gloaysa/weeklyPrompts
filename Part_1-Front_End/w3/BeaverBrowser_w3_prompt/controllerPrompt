@@ -22,6 +22,3 @@ CONTROLLER.JS:  manipulates BEAVERSLIST and BEAVERVIEWER.  all buttons call a me
 				RETURNS:  N/A
 				BEHAVIOR:  calls 'untrackbeaver' for each beaver in 'model'. it then console logs the success/not of this operation.  calls view's displayBeavers method and console.logs the success/not message
 
-Usage Examples:
-
-Sample Inputs and Outputs:  maybe not relevant?
