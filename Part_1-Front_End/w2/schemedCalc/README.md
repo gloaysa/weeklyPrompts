@@ -47,9 +47,9 @@ The idea of this project is to make an object capable of create and store new ob
 
 ```javascript
 schemaCalc.addTo({
-    name: {type: "sum"},
-    numArgs: {type: 2},
-    operation: {type: function(a, b){return a + b}}
+    name: "sum",
+    numArgs: 2,
+    operation: function(a, b){return a + b}
   });
   //-> success!
 ```
@@ -63,10 +63,19 @@ schemaCalc.operate("sum", 1, 2);
 
 ```javascript
 schemaCalc.changeSchema({
-    name: {value: "sum", does: "Add up to 3 numbers"},
-    numArgs: {value: 3, does: "Give the numbers of args that operation takes"},
-    operation: {value: function(a, b, c = 0){return a + b + c}}
-  });
+	name: {
+		type: 'string', 
+		fallback: 'string'
+	}, 
+	args: {
+		type: 'number', 
+		fallback: 0000
+	}, 
+	operation: {
+		type: 'function', 
+		fallback: function() {}
+	}
+});
   //-> success!
 ```
 
