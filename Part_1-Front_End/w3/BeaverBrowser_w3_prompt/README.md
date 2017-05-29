@@ -69,7 +69,7 @@ Be ready, this file is loooong.
 			* arguments: it will take two arguments: something to identify which beaver modify and the new location.  
 			* returns: nada.
 
-		- untrackAll: function. Change all the beaver's tracked property to false.
+		- ToggleAll: function. Change all the beaver's tracked property to false.
 
 			* arguments: nada.  
 			* returns: nada.
