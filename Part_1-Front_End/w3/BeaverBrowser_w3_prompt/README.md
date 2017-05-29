@@ -25,7 +25,7 @@ Be ready, this file is loooong.
   + Imports:  all of your .js files and your .css style sheet 
   + Users can:
 
-  		- UNTRACK ALL BEAVERS: be able to untrack all beavers when funding is cut.
+  		- RE/UNTRACK ALL BEAVERS: be able to re/untrack all beavers when funding is raised/cut.
 
   		- UNTRACK SINGLE BEAVER: maybe it died :( Or maybe you're just bored of it.
 
