@@ -52,7 +52,7 @@ Be ready, this file is loooong.
 	**beaversList**: the 'model' in your MVC  
 
  	- PROPERTIES  
- 		- beavers:  an array containing beaver records  
+ 		- beavers:  an object containing beaver records.  the key will be a unique number assigned to each beaver at createion.  
 	- METHODS  
 		- trackedBeavers: array containing the names of the beavers being tracked.  
 		- toogleTracked: a function. Accesses the indicated beaver and sets its 'tracked' property to what it wasn't.
