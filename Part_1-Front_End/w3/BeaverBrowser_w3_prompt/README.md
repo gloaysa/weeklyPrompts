@@ -39,20 +39,21 @@ Be ready, this file is loooong.
 
 3. **model.js**: All the functionality connected to storing, accessing, modifying beavers. It will have a main object storing other objects and functions. No libraries, just vanilla javascript :)
 
-	+ beaversList: the 'model' in your MVC
-	**PROPERTIES**
 
-		- beaverRecord: object. Their properties must be:
+	**beaverRecord**:   object.  
+		- Properties:  
 
 			* NAME: string, the beaver's name.  
 			* AGE: integer, the beaver's age.  
 			* SEX: string, indicating beaver's sex.  
 			* LOCATION: array, containing history of recorded sightings.  
 			* TRACKED: boolean, is this beaver being tracked?
+			
+	**beaversList**: the 'model' in your MVC  
 
-		- beavers: array containing beavers records.  
-	**METHODS**
-
+ 	- PROPERTIES  
+ 		- beavers:  an array containing beaver records  
+	- METHODS  
 		- trackedBeavers: array containing the names of the beavers being tracked.  
 		- toogleTracked: a function. Accesses the indicated beaver and sets its 'tracked' property to what it wasn't.
 
